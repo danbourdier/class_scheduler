@@ -452,6 +452,7 @@ class Homepage extends Component {
     return cards;
   }
   
+<<<<<<< HEAD
   
   renderWhereWeAre() {
     return(
@@ -541,6 +542,96 @@ class Homepage extends Component {
       </div>
     );
   }
+=======
+  // renderWhereWeAre() {
+  //   return(
+  //     this.renderElementContainer(
+  //       pageContent.whereWeAre,
+  //       this.renderWhereWeAreComponents()
+  //   ));
+  // }
+
+  // renderWhereWeAreComponents() {
+  //   return(
+  //     <div className='whereWeAreComponentsContainer'>
+  //       <FormGroup>
+  //         <Grid item>
+  //           <ButtonGroup
+  //             variant="contained"
+  //             size="large"
+  //           >
+  //             <Button
+  //               className='userSelectClientsButton'
+  //               onClick={ () => this.handleUserToggle('clientsSelected', this.state.clientsSelected) }
+  //               style={ {
+  //                 backgroundColor: this.state.clientsSelected ? '#F1592A' : '',
+  //                 color: this.state.clientsSelected ? 'white' : '',
+  //               } }
+  //             >
+  //               <FormattedMessage
+  //                 id='HomePage.UserSelectClients'
+  //                 default='Clients'
+  //               />
+  //             </Button>
+  //             <Button
+  //               className='userSelectVolunteersButton'
+  //               onClick={ () => this.handleUserToggle('volunteersSelected', this.state.volunteersSelected) }
+  //               style={ {
+  //                 backgroundColor: this.state.volunteersSelected ? '#29AAE2' : '',
+  //                 color: this.state.volunteersSelected ? 'white' : '',
+  //               } }
+  //             >
+  //               <FormattedMessage
+  //                 id='HomePage.UserSelectVolunteers'
+  //                 default='Volunteers'
+  //               />
+  //             </Button>
+  //           </ButtonGroup>
+  //         </Grid>
+  //         <FormControlLabel
+  //           className='mapToggleLabel'
+  //           control={
+  //             (
+  //               <Switch
+  //                 checked={ this.state.mapView==='row' }
+  //                 onChange={ this.handleMapView }
+  //                 value={ this.state.mapView }
+  //                 color='primary'
+  //                 inputProps={ { 'aria-label': 'Map View Switch' } }
+  //               />
+  //             )
+  //           }
+  //           label={
+  //             (
+  //               this.state.mapView==='row'
+  //               ?
+  //               (
+  //                 <p>
+  //                   <FormattedMessage
+  //                     id='Homepage.MapViewROW'
+  //                     default='World'
+  //                   />
+  //                 </p>
+  //               )
+  //               :
+  //               (
+  //                 <p>
+  //                   <FormattedMessage
+  //                     id='Homepage.MapViewUSA'
+  //                     default='USA'
+  //                   />
+  //                 </p>
+  //               )
+  //             )
+  //           }
+  //           labelPlacement='end'
+  //         />
+  //       </FormGroup>
+  //       <UserMap view={ this.state.mapView } viewClients={ this.state.clientsSelected } viewVolunteers={ this.state.volunteersSelected } />
+  //     </div>
+  //   );
+  // }
+>>>>>>> 90a454be710c4a83e9917e87a36f09108646cbfc
 
   renderJoinUs() {
     return(

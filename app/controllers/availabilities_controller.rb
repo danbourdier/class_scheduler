@@ -1,6 +1,9 @@
 class AvailabilitiesController < ApplicationController
   include AvailabilitiesSorter
+<<<<<<< HEAD
   include AvailabilityTimesGenerator
+=======
+>>>>>>> 90a454be710c4a83e9917e87a36f09108646cbfc
 
   before_action :authenticate_user!
   before_action :check_if_volunteer?, except: [:search]

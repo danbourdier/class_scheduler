@@ -3,8 +3,13 @@
 class UsersController < ApplicationController
   include AvailabilitiesSorter
   
+<<<<<<< HEAD
   before_action :authenticate_user!, except: [:cities, :counts]
   before_action :permitted_params, except: [:cities, :counts]
+=======
+  before_action :authenticate_user!, except: :cities
+  before_action :permitted_params, except: :cities
+>>>>>>> 90a454be710c4a83e9917e87a36f09108646cbfc
 
   def show
     redirect_to root_path && return unless current_user
